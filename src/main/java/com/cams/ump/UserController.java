@@ -7,7 +7,7 @@ import java.util.List;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = "desolate-sierra-02471.herokuapp.com")
 public class UserController {
 
     private final UserRepository userRepository;
