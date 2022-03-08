@@ -6,14 +6,16 @@ import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 
+import static javax.persistence.GenerationType.IDENTITY;
+
 @Data
 @AllArgsConstructor
-@Table(name = "portal_users")
 @Entity
+@Table(name = "portal_users")
 public class User {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = IDENTITY)
     private Long id;
     private String firstName;
     private String lastName;
